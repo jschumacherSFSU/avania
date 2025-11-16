@@ -1,24 +1,32 @@
 /* === ALL PAGES === */
 body {
     margin: 0;
-    padding: 0;    
+    padding: 0;   
 }
 
 #logo {
-    height: 150px;
+    height: 125px;
     margin-left: 50px;
     padding-bottom: 20px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y:scroll;
 }
 
 #bg-layer {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('images/home-bg.jpg');
-    background-size: cover;
     opacity: 0.4;
+    background-size: 100% 100%;
+    background-position: center center;
     z-index: -1;
 }
 
@@ -29,15 +37,16 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    height: 175px;
-    margin-bottom: 25px;
+    height: 125px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
 }
 
 nav {
     text-align: center;
     padding-right: 20px;
     font-family: amandine, sans-serif;
-    font-size: 14pt;
+    font-size: 1rem;
 }
 
 nav a {
@@ -59,19 +68,19 @@ nav a.active {
 
 #ui-elements a{
     color: white;
-    font-size: 24pt;
-    padding-left: 20px
+    font-size: 1.25rem;
+    padding-left: 20px;
 }
 
 #headline {
     color: white;
-    background-color: #2e3166;
-    width: 1800px;
-    height: 75px;
+    background-color: rgb(46, 49, 102, 0.8);
+    width: 1400px;
+    height: 60px;
     border-radius: 0px 10px 10px 0px;
     text-align: center;
     font-family: "amandine", sans-serif;
-    font-size: 18pt;
+    font-size: 14pt;
     font-weight: bold;
     font-style: italic;
 }
@@ -84,6 +93,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 200px;
+    flex-shrink: 0;
+    margin-top: 50px;
 }
 
 #contact {
@@ -91,7 +102,7 @@ footer {
     padding-left: 20px;
     color: white;
     font-family: amandine, sans-serif;
-    padding-bottom: 10px;    
+    font-size: 1rem;    
 }
 
 #copyright {
@@ -99,6 +110,7 @@ footer {
     padding-right: 20px;
     color: white;
     font-family: amandine, sans-serif;
+    font-size: 1rem;
 }
 
 #social-media {
@@ -106,33 +118,32 @@ footer {
     justify-content: center;
     gap: 25px;
     color: white;
-    font-size: 24pt;
+    font-size: 1.25rem;
 }
 /* === HOME PAGE === */
+main {
+    position: relative;
+    z-index: 1;   
+}
+
 .rooms {
     display: flex;
     width: 100%;
     padding-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
+
 
 #cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: repeat(3,1fr); 
     grid-template-rows: 1fr;
-    flex-grow: 1;
     gap: 1rem; 
     padding-right: 200px;
 }
 
-.room-copy {
-    color: #2e3166;
-    font-family: 'neue-haas-grotesk-display', sans-serif;
-    font-size: 14pt;
-    letter-spacing: 2pt;
-    width: 500px;
-    text-align: center;
-    margin:0;
+.card {
+    max-width: 75%;
 }
 
 .room-link {
@@ -144,15 +155,19 @@ footer {
 }
 
 #dining #living #slumber{
-    width: 500px;
     position: relative;
 }
 
 #dining span, #living span, #slumber span {
     position: relative;
-    bottom: 75px;
-    left: 350px;
+    bottom: 30px;
+    left: 150px;
     color: white;
+    border-radius: 10px;
+}
+
+#slumber span {
+    left: 125px;
 }
 
 #dining a, #living a, #slumber a {
@@ -162,10 +177,14 @@ footer {
 }
 
 #dining p, #living p, #slumber p {
-    width: 500px;
-    text-align: center;
+    width: 250px;
     font-family: 'neue-haas-grotesk-display', sans-serif;
-    font-weight: 14pt;
+    font-size: 12pt;
+    color: #2e3166;
+    letter-spacing: 2pt;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    line-height: 200%;
 }
 
 #dining img, #living img, #slumber img {
@@ -173,8 +192,10 @@ footer {
 }
 
 .card img{
+    max-width: 75%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 20px 20px 1px rgba(230, 206, 195, 0.9);
+    box-shadow: 10px 10px 4px rgba(102,63,46,.2);
 }
 
 #choose {
@@ -184,22 +205,22 @@ footer {
     color: white;
     padding: 20px;
     border-radius: 10px 0px 0px 10px;
-    width: 300px;
-    height: 690px;
+    max-width: 200px;
+    height: 400px;
     font-family: amandine, sans-serif;
 }
 
 .action {
-    font-size: 24pt;
+    font-size: 14pt;
     font-weight: bold;
 }
 
 #copy {
-    font-size: 18pt;
+    font-size: 12pt;
     font-weight: lighter;
     line-height: 200%;
     margin-left: 20px;
-    margin-right: 90px;
+    margin-right: 20px;
 }
 
 /* === LIVING ROOM PAGE === */
