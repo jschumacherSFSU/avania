@@ -1,0 +1,243 @@
+/* === ALL PAGES === */
+body {
+    margin: 0;
+    padding: 0;    
+}
+
+#logo {
+    height: 150px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+#bg-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('images/home-bg.jpg');
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header {
+    background: #40622e;
+    background-color: #40622e;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    height: 175px;
+    margin-bottom: 25px;
+}
+
+nav {
+    text-align: center;
+    padding-right: 20px;
+    font-family: amandine, sans-serif;
+    font-size: 14pt;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a.active {
+    background-color: #9fbb92 ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#ui-elements {
+    text-align: right;
+    padding-right: 40px;
+}
+
+#ui-elements a{
+    color: white;
+    font-size: 24pt;
+    padding-left: 20px
+}
+
+#headline {
+    color: white;
+    background-color: #2e3166;
+    width: 1800px;
+    height: 75px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    font-family: "amandine", sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ===FOOTER=== */
+footer {
+    background: #40622e;
+    background-color: #40622e;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 200px;
+}
+
+#contact {
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-family: amandine, sans-serif;
+    padding-bottom: 10px;    
+}
+
+#copyright {
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+    font-family: amandine, sans-serif;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: white;
+    font-size: 24pt;
+}
+/* === HOME PAGE === */
+.rooms {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr;
+    flex-grow: 1;
+    gap: 1rem; 
+    padding-right: 200px;
+}
+
+.room-copy {
+    color: #2e3166;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+    width: 500px;
+    text-align: center;
+    margin:0;
+}
+
+.room-link {
+    text-decoration: none;
+    color: white;
+    font-family: "amandine", sans-serif;
+    font-size: 18pt;
+    font-style: italic;
+}
+
+#dining #living #slumber{
+    width: 500px;
+    position: relative;
+}
+
+#dining span, #living span, #slumber span {
+    position: relative;
+    bottom: 75px;
+    left: 350px;
+    color: white;
+}
+
+#dining a, #living a, #slumber a {
+    position: relative;
+    bottom: 25px;
+    text-decoration: none;
+}
+
+#dining p, #living p, #slumber p {
+    width: 500px;
+    text-align: center;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-weight: 14pt;
+}
+
+#dining img, #living img, #slumber img {
+   border-radius: 10px;
+}
+
+.card img{
+    border-radius: 10px;
+    box-shadow: 20px 20px 1px rgba(230, 206, 195, 0.9);
+}
+
+#choose {
+    position: absolute;
+    right: 0;
+    background-color: rgba(102,63,46,.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+    width: 300px;
+    height: 690px;
+    font-family: amandine, sans-serif;
+}
+
+.action {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+#copy {
+    font-size: 18pt;
+    font-weight: lighter;
+    line-height: 200%;
+    margin-left: 20px;
+    margin-right: 90px;
+}
+
+/* === LIVING ROOM PAGE === */
+
+.living-items div a img{
+    width: 240px;
+    height: auto;
+} 
+
+#chairs, #sofas, #tables, #accents {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.chair-card, .sofa-card, .table-card, .accent-card {
+    text-align: center;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+    font-family: amandine, sans-serif;
+}
+
+.view-all a{
+    text-decoration: none;
+    border: 2px solid #2e3166;
+    background-color: #2e3166;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
